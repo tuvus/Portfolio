@@ -37,13 +37,13 @@ function App() {
         <div className="min-h-screen w-full">
             <div className="svg-container">
                 <svg viewBox="0 0 800 400"
-                     className="svg bg-[url(/src/assets/StarBackgroundLarge.png)] md:bg-center md:bg-cover">
+                     className="svg bg-[url(/src/assets/StarBackgroundLarge.png)] bg-center bg-cover">
                     <path id="curve" fill="#242424" d="M 800 300 Q 400 350 0 300 L 0 400 L 800 400 L 800 300 Z">
                     </path>
                 </svg>
             </div>
             {/*Icons*/}
-            <div className="flex gap-2">
+            <div className="flex justify-end gap-2">
                 <a href="https://www.linkedin.com/in/oskar-niesen/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
                         <path
@@ -91,7 +91,7 @@ function App() {
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                         data-aos="fade-left">
                         <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] md:bg-center md:bg-cover rounded-2xl"/>
+                            className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl">Akroid</span>
                             <span>A space themed real time strategy game written and drawn from ground up using the Unity Game Engine.</span>
@@ -113,13 +113,13 @@ function App() {
                             </a>
                         </div>
                         <div
-                            className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] md:bg-center md:bg-cover rounded-2xl"/>
+                            className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] bg-center bg-cover rounded-2xl"/>
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                         data-aos="fade-left">
                         <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] md:bg-center md:bg-cover rounded-2xl"/>
+                            className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl ">Course Scheduler</span>
                             <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
@@ -140,13 +140,13 @@ function App() {
                             </a>
                         </div>
                         <div
-                            className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] md:bg-center md:bg-cover rounded-2xl"/>
+                            className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] bg-center bg-cover rounded-2xl"/>
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                         data-aos="fade-left">
                         <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] md:bg-center md:bg-cover rounded-2xl"/>
+                            className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl">Iowa Systems</span>
                             <span className="">3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
