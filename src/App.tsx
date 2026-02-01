@@ -12,11 +12,13 @@ function App() {
                 <span className="text-5xl mb-6">Oskar Niesen</span>
                 <span className="text-2xl font-bold">Software Developer</span>
             </header>
-            <section className="flex flex-col items-center w-full">
-                <span className="text-4xl">Projects</span>
-                <a href="https://github.com/tuvus" target="_blank">
-                    <button>GitHub</button>
-                </a>
+            <section className="flex flex-col items-center w-full mt-6">
+                <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl">
+                    <span className="text-4xl">Projects</span>
+                    <a href="https://github.com/tuvus" target="_blank">
+                        <button>GitHub</button>
+                    </a>
+                </div>
                 <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
@@ -43,7 +45,8 @@ function App() {
                                 <button>GitHub</button>
                             </a>
                         </div>
-                        <div className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] md:bg-center md:bg-cover rounded-2xl"/>
+                        <div
+                            className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] md:bg-center md:bg-cover rounded-2xl"/>
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
@@ -69,7 +72,8 @@ function App() {
                                 <button>GitHub</button>
                             </a>
                         </div>
-                        <div className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] md:bg-center md:bg-cover rounded-2xl"/>
+                        <div
+                            className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] md:bg-center md:bg-cover rounded-2xl"/>
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
