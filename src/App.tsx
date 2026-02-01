@@ -52,13 +52,13 @@ function App() {
                     <span className="text-lg">As a passionate software developer I have worked on many small and large projects, most of which can be found on GitHub.</span>
                     <span className="text-lg">Programming languages include C#, Kotlin, Java, Typescript and C++.</span>
                     <a href="https://github.com/tuvus" target="_blank">
-                        <button>GitHub</button>
+                        <button>GitHub Profile</button>
                     </a>
                 </div>
                 <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="slide-left">
+                        data-aos="fade-left">
                         <div
                             className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] md:bg-center md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
@@ -72,7 +72,7 @@ function App() {
 
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="slide-right">
+                        data-aos="fade-right">
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl text-white">Euclid</span>
                             <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
@@ -86,7 +86,7 @@ function App() {
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="slide-left">
+                        data-aos="fade-left">
                         <div
                             className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] md:bg-center md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
@@ -100,7 +100,7 @@ function App() {
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="slide-right">
+                        data-aos="fade-right">
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl text-white">STEM Programs</span>
                             <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
@@ -113,7 +113,7 @@ function App() {
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="slide-left">
+                        data-aos="fade-left">
                         <div
                             className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] md:bg-center md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
