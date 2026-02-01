@@ -5,16 +5,52 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 function App() {
+    let last_scroll_position = 0;
+    const defaultCurveValue = 350;
+    const curveRate = 3;
+    let ticking = false;
+
+    function scrollEvent(scrollPos: number) {
+        if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
+            const curveValue = defaultCurveValue - scrollPos / curveRate;
+            const curveElement = document.getElementById("curve")!;
+            curveElement.setAttribute(
+                "d", "M 800 300 Q 400 " + curveValue + " 0 300 L 0 400 L 800 400 L 800 300 Z"
+            );
+        }
+    }
+
+    window.addEventListener("scroll", function () {
+        last_scroll_position = window.scrollY;
+
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                scrollEvent(last_scroll_position);
+                ticking = false;
+            });
+        }
+
+        ticking = true;
+    });
 
     return (
         <div className="min-h-screen w-full">
-            <header className="flex flex-col bg-gray-900 p-8 bg-blend-darken rounded-4xl">
+            <div className="svg-container">
+                <svg viewBox="0 0 800 400" className="svg bg-[url(/src/assets/StarBackgroundLarge.png)] md:bg-center md:bg-cover">
+                    <path id="curve" fill="#242424" d="M 800 300 Q 400 350 0 300 L 0 400 L 800 400 L 800 300 Z">
+                    </path>
+                </svg>
+            </div>
+            <header
+                className="flex flex-col p-8 rounded-4xl">
                 <span className="text-5xl mb-6">Oskar Niesen</span>
                 <span className="text-2xl font-bold">Software Developer</span>
             </header>
-            <section className="flex flex-col items-center w-full mt-6">
-                <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl">
-                    <span className="text-4xl">Projects</span>
+            <section className="flex flex-col items-center w-full mt-12 overflow-x-hidden">
+                <span className="text-6xl">Projects</span>
+                <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
+                    <span className="text-lg">As a passionate software developer I have worked on many small and large projects, most of which can be found on GitHub.</span>
+                    <span className="text-lg">Programming languages include C#, Kotlin, Java, Typescript and C++.</span>
                     <a href="https://github.com/tuvus" target="_blank">
                         <button>GitHub</button>
                     </a>
