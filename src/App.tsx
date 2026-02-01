@@ -22,7 +22,7 @@ function App() {
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                         data-aos="slide-left">
                         <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] md:bg-cover rounded-2xl"/>
+                            className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] md:bg-center md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl">Akroid</span>
                             <span>A space themed real time strategy game written and drawn from ground up using the Unity Game Engine.</span>
@@ -43,13 +43,13 @@ function App() {
                                 <button>GitHub</button>
                             </a>
                         </div>
-                        <div className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] md:bg-cover rounded-2xl"/>
+                        <div className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] md:bg-center md:bg-cover rounded-2xl"/>
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                         data-aos="slide-left">
                         <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] md:bg-cover rounded-2xl"/>
+                            className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] md:bg-center md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl ">Course Scheduler</span>
                             <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
@@ -69,13 +69,13 @@ function App() {
                                 <button>GitHub</button>
                             </a>
                         </div>
-                        <div className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] md:bg-cover rounded-2xl"/>
+                        <div className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] md:bg-center md:bg-cover rounded-2xl"/>
                     </div>
                     <div
                         className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                         data-aos="slide-left">
                         <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] md:bg-cover rounded-2xl"/>
+                            className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] md:bg-center md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl">Iowa Systems</span>
                             <span className="">3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
