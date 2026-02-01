@@ -1,4 +1,8 @@
 import './App.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function App() {
 
@@ -15,7 +19,8 @@ function App() {
                 </a>
                 <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
                     <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102">
+                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                        data-aos="slide-left">
                         <div
                             className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
@@ -28,7 +33,8 @@ function App() {
                     </div>
 
                     <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl">
+                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                        data-aos="slide-right">
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl text-white">Euclid</span>
                             <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
@@ -40,7 +46,8 @@ function App() {
                         <div className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] md:bg-cover rounded-2xl"/>
                     </div>
                     <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl">
+                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                        data-aos="slide-left">
                         <div
                             className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
@@ -53,7 +60,8 @@ function App() {
                         </div>
                     </div>
                     <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl">
+                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                        data-aos="slide-right">
                         <div className="flex flex-col gap-2 items-center">
                             <span className="font-bold text-3xl text-white">STEM Programs</span>
                             <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
@@ -64,7 +72,8 @@ function App() {
                         <div className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] md:bg-cover rounded-2xl"/>
                     </div>
                     <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl">
+                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                        data-aos="slide-left">
                         <div
                             className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] md:bg-cover rounded-2xl"/>
                         <div className="flex flex-col gap-2 items-center">
