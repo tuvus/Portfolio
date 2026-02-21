@@ -35,17 +35,21 @@ function App() {
 
     return (
         <div className="w-max-1280px min-h-screen w-full">
-            <header className="fixed items-center w-4/5 top-4">
+            <div className="parallax-1 -z-5"></div>
+            <header className="fixed items-center w-4/5 top-4 z-50">
                 {/*Icons*/}
                 <div className="flex justify-end gap-2">
-                    <a href="https://www.linkedin.com/in/oskar-niesen/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+                    <a href="https://www.linkedin.com/in/oskar-niesen/" target="_blank"
+                       className="duration-300 hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                             fill="#ffffff">
                             <path
                                 d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z"/>
                         </svg>
                     </a>
-                    <a href="https://github.com/tuvus" target="_blank"className="ml-1.5">
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
+                    <a href="https://github.com/tuvus" target="_blank" className="ml-1.5 duration-300 hover:scale-110">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="#ffffff"
+                             xmlns="http://www.w3.org/2000/svg"
                              preserveAspectRatio="xMinYMin" className="jam jam-github">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -55,7 +59,7 @@ function App() {
                             </g>
                         </svg>
                     </a>
-                    <a href="mailto:oskarniesen1@gmail.com" target="_blank">
+                    <a href="mailto:oskarniesen1@gmail.com" target="_blank" className="duration-300 hover:scale-110">
                         <svg width="34" height="40" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 9 40 40"
                              stroke="#ffffff" stroke-width="0.00042">
@@ -67,7 +71,6 @@ function App() {
                     </a>
                 </div>
 
-
             </header>
             <div className="svg-container">
                 <svg viewBox="0 0 800 400"
@@ -76,95 +79,98 @@ function App() {
                     </path>
                 </svg>
             </div>
-            <header className="flex flex-col mt-10 rounded-4xl">
-                <span className="text-5xl font-extrabold mb-6">Oskar Niesen</span>
-                <span className="text-2xl font-bold">Software Developer</span>
-            </header>
-            <section className="flex flex-col items-center w-full mt-12 overflow-x-hidden">
-                <span className="text-6xl">Projects</span>
-                <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
-                    <span className="text-lg">As a passionate software developer I have worked on many small and large projects, most of which can be found on GitHub.</span>
-                    <span className="text-lg">Programming languages include C#, Kotlin, Java, Typescript and C++.</span>
-                    <a href="https://github.com/tuvus" target="_blank">
-                        <button>GitHub Profile</button>
-                    </a>
-                </div>
-                <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
-                    <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="fade-left">
-                        <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
-                        <div className="flex flex-col gap-2 items-center">
-                            <span className="font-bold text-3xl">Akroid</span>
-                            <span>A space themed real time strategy game written and drawn from ground up using the Unity Game Engine.</span>
-                            <a href="https://tuvus.github.io/" target="_blank">
-                                <button>Website/Demo</button>
-                            </a>
-                        </div>
+            <div className="approot top-0">
+                <header className="flex flex-col mt-10 rounded-4xl">
+                    <span className="text-6xl font-extrabold mb-6">Oskar Niesen</span>
+                    <span className="text-2xl font-bold">Software Developer</span>
+                </header>
+                <section className="flex flex-col items-center w-full mt-140 overflow-x-hidden">
+                    <span className="text-6xl">Projects</span>
+                    <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
+                        <span className="text-lg">As a passionate software developer I have worked on many small and large projects, most of which can be found on GitHub.</span>
+                        <span
+                            className="text-lg">Programming languages include C#, Kotlin, Java, Typescript and C++.</span>
+                        <a href="https://github.com/tuvus" target="_blank">
+                            <button>GitHub Profile</button>
+                        </a>
                     </div>
-
-                    <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="fade-right">
-                        <div className="flex flex-col gap-2 items-center">
-                            <span className="font-bold text-3xl text-white">Euclid</span>
-                            <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
-                        To demonstrate the power of the game engine it includes a tower defense card game.</span>
-                            <a href="https://github.com/tuvus/Euclid" target="_blank">
-                                <button>GitHub</button>
-                            </a>
-                        </div>
+                    <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
                         <div
-                            className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] bg-center bg-cover rounded-2xl"/>
-                    </div>
-                    <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="fade-left">
-                        <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
-                        <div className="flex flex-col gap-2 items-center">
-                            <span className="font-bold text-3xl ">Course Scheduler</span>
-                            <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
-                        This program helps find conflicts in the schedule and optimizes class times for administrators and professors.</span>
-                            <a href="https://seniord.cs.iastate.edu/2025-Dec-09/" target="_blank">
-                                <button>Website</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="fade-right">
-                        <div className="flex flex-col gap-2 items-center">
-                            <span className="font-bold text-3xl text-white">STEM Programs</span>
-                            <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
-                            <a href="https://github.com/CSE-Club-ISU/STEM-Programs" target="_blank">
-                                <button>GitHub</button>
-                            </a>
-                        </div>
-                        <div
-                            className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] bg-center bg-cover rounded-2xl"/>
-                    </div>
-                    <div
-                        className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                        data-aos="fade-left">
-                        <div
-                            className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
-                        <div className="flex flex-col gap-2 items-center">
-                            <span className="font-bold text-3xl">Iowa Systems</span>
-                            <span className="">3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
-                            <div className="flex gap-4">
-                                <a href="https://tuvus.github.io/iowa-systems-demo/" target="_blank">
-                                    <button>Demo</button>
-                                </a>
-                                <a href="https://github.com/tuvus/iowa-systems?tab=readme-ov-file" target="_blank">
-                                    <button>GitHub</button>
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                            data-aos="fade-left">
+                            <div
+                                className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl">Akroid</span>
+                                <span>A space themed real time strategy game written and drawn from ground up using the Unity Game Engine.</span>
+                                <a href="https://tuvus.github.io/" target="_blank">
+                                    <button>Website/Demo</button>
                                 </a>
                             </div>
                         </div>
+
+                        <div
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                            data-aos="fade-right">
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl text-white">Euclid</span>
+                                <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
+                        To demonstrate the power of the game engine it includes a tower defense card game.</span>
+                                <a href="https://github.com/tuvus/Euclid" target="_blank">
+                                    <button>GitHub</button>
+                                </a>
+                            </div>
+                            <div
+                                className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] bg-center bg-cover rounded-2xl"/>
+                        </div>
+                        <div
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                            data-aos="fade-left">
+                            <div
+                                className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl ">Course Scheduler</span>
+                                <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
+                        This program helps find conflicts in the schedule and optimizes class times for administrators and professors.</span>
+                                <a href="https://seniord.cs.iastate.edu/2025-Dec-09/" target="_blank">
+                                    <button>Website</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                            data-aos="fade-right">
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl text-white">STEM Programs</span>
+                                <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
+                                <a href="https://github.com/CSE-Club-ISU/STEM-Programs" target="_blank">
+                                    <button>GitHub</button>
+                                </a>
+                            </div>
+                            <div
+                                className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] bg-center bg-cover rounded-2xl"/>
+                        </div>
+                        <div
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
+                            data-aos="fade-left">
+                            <div
+                                className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl">Iowa Systems</span>
+                                <span className="">3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
+                                <div className="flex gap-4">
+                                    <a href="https://tuvus.github.io/iowa-systems-demo/" target="_blank">
+                                        <button>Demo</button>
+                                    </a>
+                                    <a href="https://github.com/tuvus/iowa-systems?tab=readme-ov-file" target="_blank">
+                                        <button>GitHub</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     )
 }
