@@ -14,13 +14,26 @@ function App() {
         if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
             const curveValue = defaultCurveValue - scrollPos / curveRate;
             const curveElement = document.getElementById("curve")!;
+            const docWidth = document.body.offsetWidth;
             curveElement.setAttribute(
-                "d", "M 800 300 Q 400 " + curveValue + " 0 300 L 0 400 L 800 400 L 800 300 Z"
+                "d", "M " + docWidth + " 300 Q 400 " + curveValue + " 0 300 L 0 0 L " + docWidth + " 0 L " + docWidth + "300 Z"
             );
         }
     }
 
     window.addEventListener("scroll", function () {
+        last_scroll_position = window.scrollY;
+
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                scrollEvent(last_scroll_position);
+                ticking = false;
+            });
+        }
+
+        ticking = true;
+    });
+    window.addEventListener("resize", function () {
         last_scroll_position = window.scrollY;
 
         if (!ticking) {
@@ -73,11 +86,30 @@ function App() {
 
             </header>
             <div className="svg-container">
-                <svg viewBox="0 0 800 400"
-                     className="svg bg-[url(/src/assets/StarBackgroundLarge.png)] bg-center bg-cover">
-                    <path id="curve" fill="#242424" d="M 800 300 Q 400 350 0 300 L 0 400 L 800 400 L 800 300 Z">
-                    </path>
+
+                <svg viewBox="0 0 800 400">
+                    <mask id="starmask" className="mask-100%">
+                        <path id="curve" fill="#ffffff" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+                        </path>
+                    </mask>
                 </svg>
+                <svg viewBox="0 0 800 400"
+                     className=" svg-container bg-[url(/src/assets/StarBackgroundLarge.png)] mask-[url(#starmask)] mask-cover bg-center bg-cover">
+                </svg>
+
+
+                {/*<svg width="100%" height="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg"*/}
+                {/*     className="svg-container">*/}
+                {/*    <mask id="starmask" className="mask-100%">*/}
+                {/*        <path id="curve" fill="#ffffff" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"/>*/}
+                {/*    </mask>*/}
+                {/*</svg>*/}
+                {/*<svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 800 400"*/}
+                {/*     className="bg-[url(/src/assets/StarBackgroundLarge.png)] mask-[url(#starmask)] mask-contain bg-cover bg-center">*/}
+                {/*<mask id="starmask" className="mask-50">*/}
+                {/*    <path id="curve" fill="#ffffff" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"/>*/}
+                {/*</mask>*/}
+                {/*</svg>*/}
             </div>
             <div className="approot top-0">
                 <header className="flex flex-col mt-10 rounded-4xl">
