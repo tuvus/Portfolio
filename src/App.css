@@ -23,9 +23,9 @@
         transition: .1s;
     }
 
-    &:hover path {
-        d: path("M 800 300 Q 400 250 0 300 L 0 400 L 800 400 L 800 300 Z");
-    }
+    /*&:hover path {*/
+    /*    d: path("M 800 300 Q 400 250 0 300 L 0 400 L 800 400 L 800 300 Z");*/
+    /*}*/
 }
 
 .parallax-1 {

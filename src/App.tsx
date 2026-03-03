@@ -17,12 +17,12 @@ function App() {
             const curveElement = document.getElementById("curve")!;
             const docWidth = document.body.offsetWidth;
             curveElement.setAttribute(
-                "d", "M " + docWidth + " 300 Q 400 " + curveValue + " 0 300 L 0 0 L " + docWidth + " 0 L " + docWidth + "300 Z"
+                "d", "M " + docWidth + " 300 Q " + docWidth / 2 + " " + curveValue + " 0 300 L 0 0 L " + docWidth + " 0 L " + docWidth + "300 Z"
             );
         }
     }
 
-    window.addEventListener("scroll", function () {
+    const scrollFunction = function () {
         last_scroll_position = window.scrollY;
 
         if (!ticking) {
@@ -33,19 +33,10 @@ function App() {
         }
 
         ticking = true;
-    });
-    window.addEventListener("resize", function () {
-        last_scroll_position = window.scrollY;
+    }
 
-        if (!ticking) {
-            window.requestAnimationFrame(function () {
-                scrollEvent(last_scroll_position);
-                ticking = false;
-            });
-        }
-
-        ticking = true;
-    });
+    window.addEventListener("scroll", scrollFunction);
+    window.addEventListener("resize", scrollFunction);
     useEffect(() => {
         scrollEvent(window.scrollY);
     }, []);
@@ -93,7 +84,7 @@ function App() {
 
                 <svg viewBox="0 0 800 400">
                     <mask id="starmask" className="mask-100%">
-                        <path id="curve" fill="#ffffff" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+                        <path id="curve" fill="#ffffff">
                         </path>
                     </mask>
                 </svg>
