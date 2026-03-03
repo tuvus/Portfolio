@@ -1,6 +1,7 @@
 import './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {useEffect} from "react";
 
 AOS.init();
 
@@ -45,6 +46,9 @@ function App() {
 
         ticking = true;
     });
+    useEffect(() => {
+        scrollEvent(window.scrollY);
+    }, []);
 
     return (
         <div className="w-max-1280px min-h-screen w-full">
@@ -96,20 +100,6 @@ function App() {
                 <svg viewBox="0 0 800 400"
                      className=" svg-container bg-[url(/src/assets/StarBackgroundLarge.png)] mask-[url(#starmask)] mask-cover bg-center bg-cover">
                 </svg>
-
-
-                {/*<svg width="100%" height="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg"*/}
-                {/*     className="svg-container">*/}
-                {/*    <mask id="starmask" className="mask-100%">*/}
-                {/*        <path id="curve" fill="#ffffff" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"/>*/}
-                {/*    </mask>*/}
-                {/*</svg>*/}
-                {/*<svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 800 400"*/}
-                {/*     className="bg-[url(/src/assets/StarBackgroundLarge.png)] mask-[url(#starmask)] mask-contain bg-cover bg-center">*/}
-                {/*<mask id="starmask" className="mask-50">*/}
-                {/*    <path id="curve" fill="#ffffff" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"/>*/}
-                {/*</mask>*/}
-                {/*</svg>*/}
             </div>
             <div className="approot top-0">
                 <header className="flex flex-col mt-10 rounded-4xl">
