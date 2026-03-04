@@ -7,8 +7,8 @@ AOS.init();
 
 function App() {
     let last_scroll_position = 0;
-    const defaultCurveValue = 1000;
-    const curveRate = 3;
+    const defaultCurveValue = 950;
+    const curveRate = 2.5;
     let ticking = false;
 
     function scrollEvent(scrollPos: number) {
@@ -16,7 +16,7 @@ function App() {
             const curveValue = defaultCurveValue - scrollPos / curveRate;
             const curveElement = document.getElementById("curve")!;
             const docWidth = document.body.offsetWidth;
-            const docHeight = 850;
+            const docHeight = 750;
             curveElement.setAttribute(
                 "d", "M " + docWidth + " " + docHeight + " Q " + docWidth / 2 + " " + curveValue + " 0 " +
                 docHeight + " L 0 0 L " + docWidth + " 0 L " + docWidth + " " + docHeight + " Z"
@@ -95,13 +95,13 @@ function App() {
             </div>
             <div className="approot top-0">
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
-                    <span className="text-6xl font-extrabold mb-3">Oskar Niesen</span>
+                    <span className="text-7xl font-extrabold mb-3">Oskar Niesen</span>
                     <span className="text-2xl font-bold mb-3">Software Developer</span>
-                    <img src="src/assets/Selfie.jpg" className="w-1/2 rounded-4xl mask-b-from-98%"
+                    <img src="src/assets/Selfie.jpg" className="w-140 rounded-4xl mask-b-from-98%"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
-                <section className="flex flex-col items-center w-full mt-3 overflow-x-hidden">
-                    <span className="text-6xl">Projects</span>
+                <section className="flex flex-col items-center w-full mt-6 overflow-x-hidden">
+                    <span className="text-6xl font-bold">Projects</span>
                     <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
                         <span className="text-lg">As a passionate software developer I have worked on many small and large projects, most of which can be found on GitHub.</span>
                         <span
