@@ -7,7 +7,7 @@ AOS.init();
 
 function App() {
     let last_scroll_position = 0;
-    const defaultCurveValue = 950;
+    const defaultCurveValue = 970;
     const curveRate = 2.5;
     let ticking = false;
 
@@ -16,7 +16,7 @@ function App() {
             const curveValue = defaultCurveValue - scrollPos / curveRate;
             const curveElement = document.getElementById("curve")!;
             const docWidth = document.body.offsetWidth;
-            const docHeight = 750;
+            const docHeight = 800;
             curveElement.setAttribute(
                 "d", "M " + docWidth + " " + docHeight + " Q " + docWidth / 2 + " " + curveValue + " 0 " +
                 docHeight + " L 0 0 L " + docWidth + " 0 L " + docWidth + " " + docHeight + " Z"
@@ -45,7 +45,11 @@ function App() {
 
     return (
         <div className="w-max-1280px min-h-screen w-full">
-            <div className="parallax-1 -z-5"></div>
+            <div className="absolute w-full -z-5 top-180">
+                <div className="parallax bg-[url(/src/assets/BlueWallpaper.jpg)] blur-xs"></div>
+                <div
+                    className="parallax bg-[url(/src/assets/BlueWallpaper.jpg)] transform -scale-y-100 -mt-2 blur-xs"></div>
+            </div>
             <header className="fixed items-center w-4/5 top-4 z-50">
                 {/*Icons*/}
                 <div className="flex justify-end gap-2">
@@ -90,20 +94,20 @@ function App() {
                     </mask>
                 </svg>
                 <svg
-                     className="h-full w-full svg-container bg-[url(/src/assets/StarBackground.jpg)] mask-[url(#starmask)] mask-cover bg-center bg-cover">
+                    className="h-full w-full svg-container bg-[url(/src/assets/StarBackground.jpg)] mask-[url(#starmask)] mask-cover bg-center bg-cover">
                 </svg>
             </div>
             <div className="approot top-0">
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
                     <span className="text-7xl font-extrabold mb-3">Oskar Niesen</span>
                     <span className="text-2xl font-bold mb-3">Software Developer</span>
-                    <img src="src/assets/Selfie.jpg" className="w-140 rounded-4xl mask-b-from-98%"
+                    <img src="src/assets/Selfie.jpg" className="w-140 m-6 rounded-4xl mask-b-from-98%"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
-                <section className="flex flex-col items-center w-full mt-6 overflow-x-hidden">
+                <section className="flex flex-col items-center w-full mt-3 overflow-x-hidden">
                     <span className="text-6xl font-bold">Projects</span>
                     <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
-                        <span className="text-lg">As a passionate software developer I have worked on many small and large projects, most of which can be found on GitHub.</span>
+                        <span className="text-lg">I am a passionate software developer and have worked on many small and large projects, most of which can be found on GitHub.</span>
                         <span
                             className="text-lg">Programming languages include C#, Kotlin, Java, Typescript and C++.</span>
                         <a href="https://github.com/tuvus" target="_blank">

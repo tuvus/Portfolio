@@ -28,11 +28,10 @@
     /*}*/
 }
 
-.parallax-1 {
+.parallax {
     width: 100%;
     min-height: 1200px;
     background-size: 100% 100%;
-    background: url("src/assets/BlueWallpaper.jpg") fixed;
-    position: absolute;
+    z-index: -5;
     top:700px;
 }
