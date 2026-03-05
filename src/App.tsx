@@ -46,9 +46,11 @@ function App() {
     return (
         <div className="w-max-1280px min-h-screen w-full">
             <div className="absolute w-full -z-5 top-180">
-                <div className="parallax bg-[url(/src/assets/BlueWallpaper.jpg)] blur-xs"></div>
-                <div
-                    className="parallax bg-[url(/src/assets/BlueWallpaper.jpg)] transform -scale-y-100 -mt-2 blur-xs"></div>
+                <img src="src/assets/BlueWallpaper.jpg" className="parallax blur-xs"></img>
+                <img src="src/assets/BlueWallpaper.jpg" className="parallax -scale-y-100 -mt-4 blur-xs"></img>
+            </div>
+            <div className="absolute w-full -z-4 top-0 mask-b-from-0% mask-b-to-70%">
+                <img src="src/assets/StarBackground.jpg" className="parallax"></img>
             </div>
             <header className="fixed items-center w-4/5 top-4 z-50">
                 {/*Icons*/}
@@ -94,7 +96,7 @@ function App() {
                     </mask>
                 </svg>
                 <svg
-                    className="h-full w-full svg-container bg-[url(/src/assets/StarBackground.jpg)] mask-[url(#starmask)] mask-cover bg-center bg-cover">
+                    className="h-full w-full svg-container bg-[url(/src/assets/StarBackground.jpg)] mask-[url(#starmask)] mask-cover bg-cover">
                 </svg>
             </div>
             <div className="approot top-0">
