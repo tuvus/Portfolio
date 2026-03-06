@@ -106,9 +106,9 @@ function App() {
                     <img src="src/assets/Selfie.jpg" className="w-140 m-6 rounded-4xl"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
-                <section className="flex flex-col items-center w-full mt-3 overflow-x-hidden">
+                <section className="flex flex-col items-center mt-3 overflow-x-hidden">
                     <span className="text-6xl font-bold">About Me</span>
-                    <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
+                    <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-3/4">
                         <span className="text-lg">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
                         I am interested in parallel computing and love collaborating with others.</span>
                         <a href="https://github.com/tuvus" target="_blank">
@@ -117,13 +117,13 @@ function App() {
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold">Career</span>
-                    <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
+                    <span className="text-6xl font-bold mb-6">Career</span>
+                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
                         <div
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
                             data-aos="fade-left">
                             <div
-                                className="w-3/4 min-w-60 bg-[url(/src/assets/Workiva.png)] bg-center bg-cover rounded-2xl"/>
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/Workiva.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Workiva Intern</span>
                                 <span>Interned at Workiva during summer 2024 working on the docs team.</span>
@@ -135,12 +135,12 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
+                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
                         <div
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
                             data-aos="fade-left">
                             <div
-                                className="w-3/4 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa State University</span>
                                 <span>Graduated from Iowa State University in fall 2025.</span>
@@ -149,13 +149,13 @@ function App() {
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold">Projects</span>
-                    <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
+                    <span className="text-6xl font-bold mb-6">Projects</span>
+                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
                         <div
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                             data-aos="fade-left">
                             <div
-                                className="w-3/4 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Akroid</span>
                                 <span>A space themed real time strategy game written and drawn from ground up using the Unity Game Engine.</span>
@@ -190,7 +190,7 @@ function App() {
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                             data-aos="fade-left">
                             <div
-                                className="w-3/4 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl ">Course Scheduler</span>
                                 <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
@@ -226,7 +226,7 @@ function App() {
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
                             data-aos="fade-left">
                             <div
-                                className="w-3/4 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa Systems</span>
                                 <span className="">3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
