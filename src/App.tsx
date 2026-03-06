@@ -108,8 +108,8 @@ function App() {
                 </header>
                 <section className="flex flex-col items-center mt-3 overflow-x-hidden">
                     <span className="text-6xl font-bold">About Me</span>
-                    <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-3/4">
-                        <span className="text-lg">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
+                    <div className="flex flex-col items-center p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2">
+                        <span className="text-lg text-center">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
                         I am interested in parallel computing and love collaborating with others.</span>
                         <a href="https://github.com/tuvus" target="_blank">
                             <button>GitHub Profile</button>
@@ -123,7 +123,7 @@ function App() {
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
                             data-aos="fade-left">
                             <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/Workiva.png)] bg-center bg-cover rounded-2xl"/>
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/Workiva.png)] bg-center bg-contain bg-no-repeat bg-orange-100 rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Workiva Intern</span>
                                 <span>Interned at Workiva during summer 2024 working on the docs team.</span>
@@ -143,7 +143,7 @@ function App() {
                                 className="w-1/2 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa State University</span>
-                                <span>Graduated from Iowa State University in fall 2025.</span>
+                                <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Kum Laude. Member of Phi Beta Kappa.</span>
                             </div>
                         </div>
                     </div>
