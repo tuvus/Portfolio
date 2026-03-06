@@ -99,7 +99,7 @@ function App() {
                     className="h-full w-full svg-container bg-[url(/src/assets/StarBackground.jpg)] mask-[url(#starmask)] mask-cover bg-cover">
                 </svg>
             </div>
-            <div className="approot top-0">
+            <div className="top-0">
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
                     <span className="text-7xl font-extrabold mb-3">Oskar Niesen</span>
                     <span className="text-2xl font-bold mb-3">Software Developer</span>
@@ -107,7 +107,7 @@ function App() {
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
                 <section className="flex flex-col items-center w-full mt-3 overflow-x-hidden">
-                    <span className="text-6xl font-bold">Projects</span>
+                    <span className="text-6xl font-bold">About Me</span>
                     <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
                         <span className="text-lg">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
                         I am interested in parallel computing and love collaborating with others.</span>
@@ -115,6 +115,41 @@ function App() {
                             <button>GitHub Profile</button>
                         </a>
                     </div>
+                </section>
+                <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
+                    <span className="text-6xl font-bold">Career</span>
+                    <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
+                        <div
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
+                            data-aos="fade-left">
+                            <div
+                                className="w-3/4 min-w-60 bg-[url(/src/assets/Workiva.png)] bg-center bg-cover rounded-2xl"/>
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl">Workiva Intern</span>
+                                <span>Interned at Workiva during summer 2024 working on the docs team.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-go-plain"></i>
+                                    <i className="devicon-dart-plain"></i>
+                                    <i className="devicon-react-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
+                        <div
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
+                            data-aos="fade-left">
+                            <div
+                                className="w-3/4 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl">Iowa State University</span>
+                                <span>Graduated from Iowa State University in fall 2025.</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
+                    <span className="text-6xl font-bold">Projects</span>
                     <div className="flex flex-col min-w-160 w-3/4 gap-10 p-4 align-middle">
                         <div
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
