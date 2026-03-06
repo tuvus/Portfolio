@@ -46,12 +46,12 @@ function App() {
     return (
         <div className="w-max-1280px min-h-screen w-full">
             <div className="absolute w-full -z-5 top-180">
-                <img src="src/assets/BlueWallpaper.jpg" className="parallax blur-xs"></img>
-                <img src="src/assets/BlueWallpaper.jpg" className="parallax -scale-y-100 -mt-4 blur-xs"></img>
+                <img src="src/assets/BlueWallpaper.jpg" className="parallax"></img>
+                <img src="src/assets/BlueWallpaper.jpg" className="parallax -scale-y-100 -mt-4"></img>
             </div>
-            <div className="absolute w-full -z-4 top-0 mask-b-from-0% mask-b-to-70%">
-                <img src="src/assets/StarBackground.jpg" className="parallax"></img>
-            </div>
+            {/*<div className="absolute w-full -z-4 top-0 mask-b-from-0% mask-b-to-70%">*/}
+            {/*    <img src="src/assets/StarBackground.jpg" className="parallax"></img>*/}
+            {/*</div>*/}
             <header className="fixed items-center w-4/5 top-4 z-50">
                 {/*Icons*/}
                 <div className="flex justify-end gap-2">
@@ -103,13 +103,14 @@ function App() {
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
                     <span className="text-7xl font-extrabold mb-3">Oskar Niesen</span>
                     <span className="text-2xl font-bold mb-3">Software Developer</span>
-                    <img src="src/assets/Selfie.jpg" className="w-140 m-6 rounded-4xl mask-b-from-98%"
+                    <img src="src/assets/Selfie.jpg" className="w-140 m-6 rounded-4xl"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
                 <section className="flex flex-col items-center w-full mt-3 overflow-x-hidden">
                     <span className="text-6xl font-bold">Projects</span>
                     <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
-                        <span className="text-lg">I am a passionate software developer and have worked on many small and large projects, most of which can be found on GitHub.</span>
+                        <span className="text-lg">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
+                        I am interested in parallel computing and love collaborating with others.</span>
                         <span
                             className="text-lg">Programming languages include C#, Kotlin, Java, Typescript and C++.</span>
                         <a href="https://github.com/tuvus" target="_blank">
