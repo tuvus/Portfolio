@@ -111,8 +111,6 @@ function App() {
                     <div className="flex flex-col p-8 gap-4 bg-gray-900 rounded-2xl mt-6">
                         <span className="text-lg">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
                         I am interested in parallel computing and love collaborating with others.</span>
-                        <span
-                            className="text-lg">Programming languages include C#, Kotlin, Java, Typescript and C++.</span>
                         <a href="https://github.com/tuvus" target="_blank">
                             <button>GitHub Profile</button>
                         </a>
@@ -126,6 +124,10 @@ function App() {
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Akroid</span>
                                 <span>A space themed real time strategy game written and drawn from ground up using the Unity Game Engine.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-csharp-plain"></i>
+                                    <i className="devicon-unity-plain"></i>
+                                </div>
                                 <a href="https://tuvus.github.io/" target="_blank">
                                     <button>Website/Demo</button>
                                 </a>
@@ -139,6 +141,9 @@ function App() {
                                 <span className="font-bold text-3xl text-white">Euclid</span>
                                 <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
                         To demonstrate the power of the game engine it includes a tower defense card game.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-cplusplus-plain"></i>
+                                </div>
                                 <a href="https://github.com/tuvus/Euclid" target="_blank">
                                     <button>GitHub</button>
                                 </a>
@@ -155,6 +160,12 @@ function App() {
                                 <span className="font-bold text-3xl ">Course Scheduler</span>
                                 <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
                         This program helps find conflicts in the schedule and optimizes class times for administrators and professors.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-nodejs-plain"></i>
+                                    <i className="devicon-nextjs-plain"></i>
+                                    <i className="devicon-tailwindcss-plain"></i>
+                                    <i className="devicon-react-plain"></i>
+                                </div>
                                 <a href="https://seniord.cs.iastate.edu/2025-Dec-09/" target="_blank">
                                     <button>Website</button>
                                 </a>
@@ -166,6 +177,9 @@ function App() {
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl text-white">STEM Programs</span>
                                 <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-java-plain"></i>
+                                </div>
                                 <a href="https://github.com/CSE-Club-ISU/STEM-Programs" target="_blank">
                                     <button>GitHub</button>
                                 </a>
@@ -181,6 +195,10 @@ function App() {
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa Systems</span>
                                 <span className="">3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-csharp-plain"></i>
+                                    <i className="devicon-unity-plain"></i>
+                                </div>
                                 <div className="flex gap-4">
                                     <a href="https://tuvus.github.io/iowa-systems-demo/" target="_blank">
                                         <button>Demo</button>
