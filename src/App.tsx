@@ -75,7 +75,7 @@ function App() {
                             </g>
                         </svg>
                     </a>
-                    <a href="mailto:oskarniesen1@gmail.com" target="_blank" className="duration-300 hover:scale-110">
+                    <a href="" target="_blank" className="duration-300 hover:scale-110">
                         <svg width="34" height="40" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 9 40 40"
                              stroke="#ffffff" strokeWidth="0.00042">
