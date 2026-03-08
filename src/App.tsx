@@ -110,7 +110,7 @@ function App() {
                     <span className="text-6xl font-bold">About Me</span>
                     <div className="flex flex-col items-center p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2">
                         <span className="text-lg text-center">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
-                        I am interested in parallel computing and love collaborating with others.</span>
+                        I am interested in parallel computing and love open source software.</span>
                         <a href="https://github.com/tuvus" target="_blank">
                             <button>GitHub Profile</button>
                         </a>
@@ -125,8 +125,8 @@ function App() {
                             <div
                                 className="w-1/2 min-w-60 bg-[url(/src/assets/Workiva.png)] bg-center bg-contain bg-no-repeat bg-orange-100 rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl">Workiva Intern</span>
-                                <span>Interned at Workiva during summer 2024 working on the docs team.</span>
+                                <span className="font-bold text-3xl">Workiva</span>
+                                <span>Interned at Workiva during summer 2024 working on the docs team. During the internship I developed new features such as document footnotes.</span>
                                 <div className="flex gap-4">
                                     <i className="devicon-go-plain"></i>
                                     <i className="devicon-dart-plain"></i>
@@ -143,10 +143,34 @@ function App() {
                                 className="w-1/2 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa State University</span>
-                                <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Kum Laude. Member of Phi Beta Kappa.</span>
+                                <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
+                    <span className="text-6xl font-bold mb-6">Contributions</span>
+                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
+                        <div
+                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
+                            data-aos="fade-left">
+                            <div
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/UncivLogo.jpg)] bg-center bg-cover bg-no-repeat bg-amber-200 rounded-2xl"/>
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl">Unciv</span>
+                                <span>Unciv is an open source remake of the video game Civilization V. Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-kotlin-plain"></i>
+                                    <i className="devicon-androidstudio-plain"></i>
+                                </div>
+                                <a href="https://github.com/yairm210/Unciv/issues?q=is%3Apr%20author%3Atuvus" target="_blank">
+                                    <button>Pull Requests</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Projects</span>
@@ -158,7 +182,7 @@ function App() {
                                 className="w-1/2 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Akroid</span>
-                                <span>A space themed real time strategy game written and drawn from ground up using the Unity Game Engine.</span>
+                                <span>A real time strategy game featuring a custom made simulation in space. The game was developed from the ground up using the Unity Game Engine.</span>
                                 <div className="flex gap-4">
                                     <i className="devicon-csharp-plain"></i>
                                     <i className="devicon-unity-plain"></i>
@@ -229,7 +253,7 @@ function App() {
                                 className="w-1/2 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa Systems</span>
-                                <span className="">3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
+                                <span className="">A 3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
                                 <div className="flex gap-4">
                                     <i className="devicon-csharp-plain"></i>
                                     <i className="devicon-unity-plain"></i>
