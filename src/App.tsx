@@ -2,6 +2,8 @@ import './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect} from "react";
+import selfie from "./assets/Selfie.jpg";
+import blueWallpaper from "./assets/BlueWallpaper.jpg";
 
 AOS.init();
 
@@ -46,8 +48,8 @@ function App() {
     return (
         <div className="w-max-1280px min-h-screen w-full">
             <div className="absolute w-full -z-5 top-180">
-                <img src="src/assets/BlueWallpaper.jpg" className="parallax"></img>
-                <img src="src/assets/BlueWallpaper.jpg" className="parallax -scale-y-100 -mt-4"></img>
+                <img src={blueWallpaper} className="parallax"></img>
+                <img src={blueWallpaper} className="parallax -scale-y-100 -mt-4"></img>
             </div>
             {/*<div className="absolute w-full -z-4 top-0 mask-b-from-0% mask-b-to-70%">*/}
             {/*    <img src="src/assets/StarBackground.jpg" className="parallax"></img>*/}
@@ -103,7 +105,7 @@ function App() {
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
                     <span className="text-7xl font-extrabold mb-3">Oskar Niesen</span>
                     <span className="text-2xl font-bold mb-3">Software Developer</span>
-                    <img src="src/assets/Selfie.jpg" className="w-140 m-6 rounded-4xl"
+                    <img src={selfie} className="w-140 m-6 rounded-4xl"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
                 <section className="flex flex-col items-center mt-3 overflow-x-hidden">
