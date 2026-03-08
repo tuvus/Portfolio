@@ -111,9 +111,6 @@ function App() {
                     <div className="flex flex-col items-center p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2">
                         <span className="text-lg text-center">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
                         I am interested in parallel computing and love open source software.</span>
-                        <a href="https://github.com/tuvus" target="_blank">
-                            <button>GitHub Profile</button>
-                        </a>
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
