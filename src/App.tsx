@@ -137,13 +137,13 @@ function App() {
                     <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
                         <div
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
-                            data-aos="fade-left">
-                            <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
+                            data-aos="fade-right">
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa State University</span>
                                 <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
                             </div>
+                            <div
+                                className="w-5/4 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
                         </div>
                     </div>
                 </section>
@@ -153,9 +153,7 @@ function App() {
                     <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
                         <div
                             className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
-                            data-aos="fade-left">
-                            <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/UncivLogo.jpg)] bg-center bg-cover bg-no-repeat bg-amber-200 rounded-2xl"/>
+                            data-aos="fade-right">
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Unciv</span>
                                 <span>Unciv is an open source remake of the video game Civilization V. Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.</span>
@@ -167,6 +165,8 @@ function App() {
                                     <button>Pull Requests</button>
                                 </a>
                             </div>
+                            <div
+                                className="w-5/4 min-w-60 bg-[url(/src/assets/UncivLogo.jpg)] bg-center bg-cover bg-no-repeat bg-amber-200 rounded-2xl"/>
                         </div>
                     </div>
 
