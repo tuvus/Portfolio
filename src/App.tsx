@@ -105,7 +105,7 @@ function App() {
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
                     <span className="text-7xl font-extrabold mb-3">Oskar Niesen</span>
                     <span className="text-2xl font-bold mb-3">Software Developer</span>
-                    <img src={selfie} className="w-140 m-6 rounded-4xl"
+                    <img src={selfie} className="w-140 m-6 rounded-4xl aspect-square"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
                 <section className="flex flex-col items-center mt-3 overflow-x-hidden">
