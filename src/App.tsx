@@ -120,32 +120,36 @@ function App() {
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Career</span>
                     <div className="panelSection">
-                        <div className="panel" data-aos="fade-left">
-                            <div
-                                className="sm:w-1/2 min-w-60 min-h-40 bg-[url(/src/assets/Workiva.png)] bg-center bg-contain bg-no-repeat bg-orange-100 rounded-2xl"/>
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl">Workiva</span>
-                                <span>Interned at Workiva during summer 2024 working on the docs team. During the internship I developed new features such as document footnotes.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="Go">
-                                        <i className="devicon-go-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="Dart">
-                                        <i className="devicon-dart-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="React">
-                                        <i className="devicon-react-plain"></i>
-                                    </Tooltip>
+                        <div data-aos="fade-left">
+                            <div className="panel">
+                                <div
+                                    className="sm:w-1/2 min-w-60 min-h-40 bg-[url(/src/assets/Workiva.png)] bg-center bg-contain bg-no-repeat bg-orange-100 rounded-2xl"/>
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl">Workiva</span>
+                                    <span>Interned at Workiva during summer 2024 working on the docs team. During the internship I developed new features such as document footnotes.</span>
+                                    <div className="flex gap-4">
+                                        <Tooltip content="Go">
+                                            <i className="devicon-go-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="Dart">
+                                            <i className="devicon-dart-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="React">
+                                            <i className="devicon-react-plain"></i>
+                                        </Tooltip>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="panel" data-aos="fade-right">
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl">Iowa State University</span>
-                                <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
+                        <div data-aos="fade-right">
+                            <div className="panel">
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl">Iowa State University</span>
+                                    <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
+                                </div>
+                                <div
+                                    className="w-5/4 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
                             </div>
-                            <div
-                                className="w-5/4 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
                         </div>
                     </div>
                 </section>
@@ -153,152 +157,166 @@ function App() {
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Contributions</span>
                     <div className="panelSection">
-                        <div className="panel" data-aos="fade-left">
-                            <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/KDE.png)] bg-center bg-contain bg-no-repeat rounded-2xl"/>
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl">KDE</span>
-                                <span>Helping out with a linux desktop environment. Maintaining Kclock and adding new features.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="C++">
-                                        <i className="devicon-cplusplus-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="Qt">
-                                        <i className="devicon-qt-plain"></i>
-                                    </Tooltip>
+                        <div data-aos="fade-left">
+                            <div className="panel">
+                                <div
+                                    className="w-1/2 min-w-60 bg-[url(/src/assets/KDE.png)] bg-center bg-contain bg-no-repeat rounded-2xl"/>
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl">KDE</span>
+                                    <span>Helping out with a linux desktop environment. Maintaining Kclock and adding new features.</span>
+                                    <div className="flex gap-4">
+                                        <Tooltip content="C++">
+                                            <i className="devicon-cplusplus-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="Qt">
+                                            <i className="devicon-qt-plain"></i>
+                                        </Tooltip>
+                                    </div>
+                                    <a href="https://invent.kde.org/oskarn" target="_blank">
+                                        <button>GitLab</button>
+                                    </a>
                                 </div>
-                                <a href="https://invent.kde.org/oskarn" target="_blank">
-                                    <button>GitLab</button>
-                                </a>
                             </div>
                         </div>
-                        <div className="panel" data-aos="fade-right">
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl">Unciv</span>
-                                <span>Unciv is an open source remake of the video game Civilization V. Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="Kotlin">
-                                        <i className="devicon-kotlin-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="Android Studio">
-                                        <i className="devicon-androidstudio-plain"></i>
-                                    </Tooltip>
+                        <div data-aos="fade-right">
+                            <div className="panel">
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl">Unciv</span>
+                                    <span>Unciv is an open source remake of the video game Civilization V. Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.</span>
+                                    <div className="flex gap-4">
+                                        <Tooltip content="Kotlin">
+                                            <i className="devicon-kotlin-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="Android Studio">
+                                            <i className="devicon-androidstudio-plain"></i>
+                                        </Tooltip>
+                                    </div>
+                                    <a href="https://github.com/yairm210/Unciv/issues?q=is%3Apr%20author%3Atuvus"
+                                       target="_blank">
+                                        <button>Pull Requests</button>
+                                    </a>
                                 </div>
-                                <a href="https://github.com/yairm210/Unciv/issues?q=is%3Apr%20author%3Atuvus"
-                                   target="_blank">
-                                    <button>Pull Requests</button>
-                                </a>
+                                <div
+                                    className="w-5/4 min-w-60 bg-[url(/src/assets/UncivLogo.jpg)] bg-center bg-cover bg-no-repeat bg-amber-200 rounded-2xl"/>
                             </div>
-                            <div
-                                className="w-5/4 min-w-60 bg-[url(/src/assets/UncivLogo.jpg)] bg-center bg-cover bg-no-repeat bg-amber-200 rounded-2xl"/>
                         </div>
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Projects</span>
                     <div className="panelSection">
-                        <div className="panel" data-aos="fade-left">
-                            <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl">Akroid</span>
-                                <span>A real time strategy game featuring a custom made simulation in space. The game was developed from the ground up using the Unity Game Engine.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="C-Sharp">
-                                        <i className="devicon-csharp-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="Unity Game Engine">
-                                        <i className="devicon-unity-plain"></i>
-                                    </Tooltip>
+                        <div data-aos="fade-left">
+                            <div className="panel">
+                                <div
+                                    className="w-1/2 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl">Akroid</span>
+                                    <span>A real time strategy game featuring a custom made simulation in space. The game was developed from the ground up using the Unity Game Engine.</span>
+                                    <div className="flex gap-4">
+                                        <Tooltip content="C-Sharp">
+                                            <i className="devicon-csharp-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="Unity Game Engine">
+                                            <i className="devicon-unity-plain"></i>
+                                        </Tooltip>
+                                    </div>
+                                    <a href="https://tuvus.github.io/" target="_blank">
+                                        <button>Website/Demo</button>
+                                    </a>
                                 </div>
-                                <a href="https://tuvus.github.io/" target="_blank">
-                                    <button>Website/Demo</button>
-                                </a>
                             </div>
                         </div>
 
-                        <div className="panel" data-aos="fade-right">
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl text-white">Euclid</span>
-                                <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
+                        <div data-aos="fade-right">
+                            <div className="panel">
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl text-white">Euclid</span>
+                                    <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
                         To demonstrate the power of the game engine it includes a tower defense card game.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="C++">
-                                        <i className="devicon-cplusplus-plain"></i>
-                                    </Tooltip>
-                                </div>
-                                <a href="https://github.com/tuvus/Euclid" target="_blank">
-                                    <button>GitHub</button>
-                                </a>
-                            </div>
-                            <div
-                                className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] bg-center bg-cover rounded-2xl"/>
-                        </div>
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                            data-aos="fade-left">
-                            <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl ">Course Scheduler</span>
-                                <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
-                        This program helps find conflicts in the schedule and optimizes class times for administrators and professors.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="Node.js">
-                                        <i className="devicon-nodejs-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="Next.js">
-                                        <i className="devicon-nextjs-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="TailwindCSS">
-                                        <i className="devicon-tailwindcss-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="React">
-                                        <i className="devicon-react-plain"></i>
-                                    </Tooltip>
-                                </div>
-                                <a href="https://seniord.cs.iastate.edu/2025-Dec-09/" target="_blank">
-                                    <button>Website</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="panel" data-aos="fade-right">
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl text-white">STEM Programs</span>
-                                <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="Java">
-                                        <i className="devicon-java-plain"></i>
-                                    </Tooltip>
-                                </div>
-                                <a href="https://github.com/CSE-Club-ISU/STEM-Programs" target="_blank">
-                                    <button>GitHub</button>
-                                </a>
-                            </div>
-                            <div
-                                className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] bg-center bg-cover rounded-2xl"/>
-                        </div>
-                        <div className="panel" data-aos="fade-left">
-                            <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
-                            <div className="flex flex-col gap-2 items-center">
-                                <span className="font-bold text-3xl">Iowa Systems</span>
-                                <span className="">A 3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
-                                <div className="flex gap-4">
-                                    <Tooltip content="C-Sharp">
-                                        <i className="devicon-csharp-plain"></i>
-                                    </Tooltip>
-                                    <Tooltip content="Unity Game Engine">
-                                        <i className="devicon-unity-plain"></i>
-                                    </Tooltip>
-                                </div>
-                                <div className="flex gap-4">
-                                    <a href="https://tuvus.github.io/iowa-systems-demo/" target="_blank">
-                                        <button>Demo</button>
-                                    </a>
-                                    <a href="https://github.com/tuvus/iowa-systems?tab=readme-ov-file" target="_blank">
+                                    <div className="flex gap-4">
+                                        <Tooltip content="C++">
+                                            <i className="devicon-cplusplus-plain"></i>
+                                        </Tooltip>
+                                    </div>
+                                    <a href="https://github.com/tuvus/Euclid" target="_blank">
                                         <button>GitHub</button>
                                     </a>
+                                </div>
+                                <div
+                                    className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] bg-center bg-cover rounded-2xl"/>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left">
+                            <div className="panel">
+                                <div
+                                    className="w-1/2 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl ">Course Scheduler</span>
+                                    <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
+                        This program helps find conflicts in the schedule and optimizes class times for administrators and professors.</span>
+                                    <div className="flex gap-4">
+                                        <Tooltip content="Node.js">
+                                            <i className="devicon-nodejs-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="Next.js">
+                                            <i className="devicon-nextjs-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="Tailwind CSS">
+                                            <i className="devicon-tailwindcss-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="React">
+                                            <i className="devicon-react-plain"></i>
+                                        </Tooltip>
+                                    </div>
+                                    <a href="https://seniord.cs.iastate.edu/2025-Dec-09/" target="_blank">
+                                        <button>Website</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-right">
+                            <div className="panel">
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl text-white">STEM Programs</span>
+                                    <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
+                                    <div className="flex gap-4">
+                                        <Tooltip content="Java">
+                                            <i className="devicon-java-plain"></i>
+                                        </Tooltip>
+                                    </div>
+                                    <a href="https://github.com/CSE-Club-ISU/STEM-Programs" target="_blank">
+                                        <button>GitHub</button>
+                                    </a>
+                                </div>
+                                <div
+                                    className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] bg-center bg-cover rounded-2xl"/>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-right">
+                            <div className="panel">
+                                <div
+                                    className="w-1/2 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
+                                <div className="flex flex-col gap-2 items-center">
+                                    <span className="font-bold text-3xl">Iowa Systems</span>
+                                    <span className="">A 3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
+                                    <div className="flex gap-4">
+                                        <Tooltip content="C-Sharp">
+                                            <i className="devicon-csharp-plain"></i>
+                                        </Tooltip>
+                                        <Tooltip content="Unity Game Engine">
+                                            <i className="devicon-unity-plain"></i>
+                                        </Tooltip>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <a href="https://tuvus.github.io/iowa-systems-demo/" target="_blank">
+                                            <button>Demo</button>
+                                        </a>
+                                        <a href="https://github.com/tuvus/iowa-systems?tab=readme-ov-file"
+                                           target="_blank">
+                                            <button>GitHub</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
