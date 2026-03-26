@@ -146,6 +146,21 @@ function App() {
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Contributions</span>
                     <div className="panelSection">
+                        <div className="panel" data-aos="fade-left">
+                            <div
+                                className="w-1/2 min-w-60 bg-[url(/src/assets/KDE.png)] bg-center bg-contain bg-no-repeat rounded-2xl"/>
+                            <div className="flex flex-col gap-2 items-center">
+                                <span className="font-bold text-3xl">KDE</span>
+                                <span>Helping out with a linux desktop environment. Maintaining Kclock and adding new features.</span>
+                                <div className="flex gap-4">
+                                    <i className="devicon-csharp-plain"></i>
+                                    <i className="devicon-qt-plain"></i>
+                                </div>
+                                <a href="https://invent.kde.org/oskarn" target="_blank">
+                                    <button>GitLab</button>
+                                </a>
+                            </div>
+                        </div>
                         <div className="panel" data-aos="fade-right">
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Unciv</span>
