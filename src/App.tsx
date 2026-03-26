@@ -118,7 +118,7 @@ function App() {
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold mb-6">Career</span>
+                    <span className="text-6xl font-bold mb-6" data-aos="fade-up">Career</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
                             <div className="panel">
@@ -155,7 +155,7 @@ function App() {
                 </section>
 
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold mb-6">Contributions</span>
+                    <span className="text-6xl font-bold mb-6" data-aos="fade-up">Contributions</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
                             <div className="panel">
@@ -203,7 +203,7 @@ function App() {
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold mb-6">Projects</span>
+                    <span className="text-6xl font-bold mb-6" data-aos="fade-up">Projects</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
                             <div className="panel">
