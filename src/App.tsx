@@ -103,26 +103,25 @@ function App() {
             </div>
             <div className="top-0">
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
-                    <span className="text-7xl font-extrabold mb-3">Oskar Niesen</span>
-                    <span className="text-2xl font-bold mb-3">Software Developer</span>
+                    <span className="text-7xl max-sm:text-4xl font-extrabold mb-3">Oskar Niesen</span>
+                    <span className="text-2xl max-sm:text-xl font-bold mb-3">Software Developer</span>
                     <img src={selfie} className="w-140 m-6 rounded-4xl aspect-square"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
                 <section className="flex flex-col items-center mt-3 overflow-x-hidden">
                     <span className="text-6xl font-bold">About Me</span>
-                    <div className="flex flex-col items-center p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2">
+                    <div
+                        className="flex flex-col items-center p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2 max-sm:w-7/8">
                         <span className="text-lg text-center">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
                         I am interested in parallel computing and love open source software.</span>
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Career</span>
-                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
-                            data-aos="fade-left">
+                    <div className="panelSection">
+                        <div className="panel" data-aos="fade-left">
                             <div
-                                className="w-1/2 min-w-60 bg-[url(/src/assets/Workiva.png)] bg-center bg-contain bg-no-repeat bg-orange-100 rounded-2xl"/>
+                                className="sm:w-1/2 min-w-60 min-h-40 bg-[url(/src/assets/Workiva.png)] bg-center bg-contain bg-no-repeat bg-orange-100 rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Workiva</span>
                                 <span>Interned at Workiva during summer 2024 working on the docs team. During the internship I developed new features such as document footnotes.</span>
@@ -133,11 +132,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
-                            data-aos="fade-right">
+                        <div className="panel" data-aos="fade-right">
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Iowa State University</span>
                                 <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
@@ -150,10 +145,8 @@ function App() {
 
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Contributions</span>
-                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64"
-                            data-aos="fade-right">
+                    <div className="panelSection">
+                        <div className="panel" data-aos="fade-right">
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl">Unciv</span>
                                 <span>Unciv is an open source remake of the video game Civilization V. Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.</span>
@@ -161,7 +154,8 @@ function App() {
                                     <i className="devicon-kotlin-plain"></i>
                                     <i className="devicon-androidstudio-plain"></i>
                                 </div>
-                                <a href="https://github.com/yairm210/Unciv/issues?q=is%3Apr%20author%3Atuvus" target="_blank">
+                                <a href="https://github.com/yairm210/Unciv/issues?q=is%3Apr%20author%3Atuvus"
+                                   target="_blank">
                                     <button>Pull Requests</button>
                                 </a>
                             </div>
@@ -169,14 +163,11 @@ function App() {
                                 className="w-5/4 min-w-60 bg-[url(/src/assets/UncivLogo.jpg)] bg-center bg-cover bg-no-repeat bg-amber-200 rounded-2xl"/>
                         </div>
                     </div>
-
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
                     <span className="text-6xl font-bold mb-6">Projects</span>
-                    <div className="flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle">
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                            data-aos="fade-left">
+                    <div className="panelSection">
+                        <div className="panel" data-aos="fade-left">
                             <div
                                 className="w-1/2 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">
@@ -192,9 +183,7 @@ function App() {
                             </div>
                         </div>
 
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                            data-aos="fade-right">
+                        <div className="panel" data-aos="fade-right">
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl text-white">Euclid</span>
                                 <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
@@ -229,9 +218,7 @@ function App() {
                                 </a>
                             </div>
                         </div>
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                            data-aos="fade-right">
+                        <div className="panel" data-aos="fade-right">
                             <div className="flex flex-col gap-2 items-center">
                                 <span className="font-bold text-3xl text-white">STEM Programs</span>
                                 <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
@@ -245,9 +232,7 @@ function App() {
                             <div
                                 className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] bg-center bg-cover rounded-2xl"/>
                         </div>
-                        <div
-                            className="flex p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102"
-                            data-aos="fade-left">
+                        <div className="panel" data-aos="fade-left">
                             <div
                                 className="w-1/2 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
                             <div className="flex flex-col gap-2 items-center">

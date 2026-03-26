@@ -28,9 +28,17 @@
     width: 100%;
     background-size: 100% 100%;
     z-index: -5;
-    top:700px;
+    top: 700px;
 }
 
 i {
     font-size: 40px;
+}
+
+.panelSection {
+    @apply flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle;
+}
+
+.panel {
+    @apply flex max-sm:flex-col p-8 gap-4 bg-gray-900 rounded-2xl transform transition duration-300 hover:scale-102 min-h-64;
 }
