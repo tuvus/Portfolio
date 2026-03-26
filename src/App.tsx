@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import {useEffect} from "react";
 import selfie from "./assets/Selfie.jpg";
 import blueWallpaper from "./assets/BlueWallpaper.jpg";
+import {Tooltip} from "flowbite-react";
 
 AOS.init();
 
@@ -126,9 +127,15 @@ function App() {
                                 <span className="font-bold text-3xl">Workiva</span>
                                 <span>Interned at Workiva during summer 2024 working on the docs team. During the internship I developed new features such as document footnotes.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-go-plain"></i>
-                                    <i className="devicon-dart-plain"></i>
-                                    <i className="devicon-react-plain"></i>
+                                    <Tooltip content="Go">
+                                        <i className="devicon-go-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="Dart">
+                                        <i className="devicon-dart-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="React">
+                                        <i className="devicon-react-plain"></i>
+                                    </Tooltip>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +160,12 @@ function App() {
                                 <span className="font-bold text-3xl">KDE</span>
                                 <span>Helping out with a linux desktop environment. Maintaining Kclock and adding new features.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-csharp-plain"></i>
-                                    <i className="devicon-qt-plain"></i>
+                                    <Tooltip content="C++">
+                                        <i className="devicon-cplusplus-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="Qt">
+                                        <i className="devicon-qt-plain"></i>
+                                    </Tooltip>
                                 </div>
                                 <a href="https://invent.kde.org/oskarn" target="_blank">
                                     <button>GitLab</button>
@@ -166,8 +177,12 @@ function App() {
                                 <span className="font-bold text-3xl">Unciv</span>
                                 <span>Unciv is an open source remake of the video game Civilization V. Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-kotlin-plain"></i>
-                                    <i className="devicon-androidstudio-plain"></i>
+                                    <Tooltip content="Kotlin">
+                                        <i className="devicon-kotlin-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="Android Studio">
+                                        <i className="devicon-androidstudio-plain"></i>
+                                    </Tooltip>
                                 </div>
                                 <a href="https://github.com/yairm210/Unciv/issues?q=is%3Apr%20author%3Atuvus"
                                    target="_blank">
@@ -189,8 +204,12 @@ function App() {
                                 <span className="font-bold text-3xl">Akroid</span>
                                 <span>A real time strategy game featuring a custom made simulation in space. The game was developed from the ground up using the Unity Game Engine.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-csharp-plain"></i>
-                                    <i className="devicon-unity-plain"></i>
+                                    <Tooltip content="C-Sharp">
+                                        <i className="devicon-csharp-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="Unity Game Engine">
+                                        <i className="devicon-unity-plain"></i>
+                                    </Tooltip>
                                 </div>
                                 <a href="https://tuvus.github.io/" target="_blank">
                                     <button>Website/Demo</button>
@@ -204,7 +223,9 @@ function App() {
                                 <span className="text-white">Euclid is a game engine built in C++ that focuses on easy parallelization and multiplayer synchronization.
                         To demonstrate the power of the game engine it includes a tower defense card game.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-cplusplus-plain"></i>
+                                    <Tooltip content="C++">
+                                        <i className="devicon-cplusplus-plain"></i>
+                                    </Tooltip>
                                 </div>
                                 <a href="https://github.com/tuvus/Euclid" target="_blank">
                                     <button>GitHub</button>
@@ -223,10 +244,18 @@ function App() {
                                 <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
                         This program helps find conflicts in the schedule and optimizes class times for administrators and professors.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-nodejs-plain"></i>
-                                    <i className="devicon-nextjs-plain"></i>
-                                    <i className="devicon-tailwindcss-plain"></i>
-                                    <i className="devicon-react-plain"></i>
+                                    <Tooltip content="Node.js">
+                                        <i className="devicon-nodejs-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="Next.js">
+                                        <i className="devicon-nextjs-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="TailwindCSS">
+                                        <i className="devicon-tailwindcss-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="React">
+                                        <i className="devicon-react-plain"></i>
+                                    </Tooltip>
                                 </div>
                                 <a href="https://seniord.cs.iastate.edu/2025-Dec-09/" target="_blank">
                                     <button>Website</button>
@@ -238,7 +267,9 @@ function App() {
                                 <span className="font-bold text-3xl text-white">STEM Programs</span>
                                 <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-java-plain"></i>
+                                    <Tooltip content="Java">
+                                        <i className="devicon-java-plain"></i>
+                                    </Tooltip>
                                 </div>
                                 <a href="https://github.com/CSE-Club-ISU/STEM-Programs" target="_blank">
                                     <button>GitHub</button>
@@ -254,8 +285,12 @@ function App() {
                                 <span className="font-bold text-3xl">Iowa Systems</span>
                                 <span className="">A 3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
                                 <div className="flex gap-4">
-                                    <i className="devicon-csharp-plain"></i>
-                                    <i className="devicon-unity-plain"></i>
+                                    <Tooltip content="C-Sharp">
+                                        <i className="devicon-csharp-plain"></i>
+                                    </Tooltip>
+                                    <Tooltip content="Unity Game Engine">
+                                        <i className="devicon-unity-plain"></i>
+                                    </Tooltip>
                                 </div>
                                 <div className="flex gap-4">
                                     <a href="https://tuvus.github.io/iowa-systems-demo/" target="_blank">
