@@ -114,7 +114,7 @@ function App() {
                 <section className="flex flex-col items-center mt-3 overflow-x-hidden">
                     <span className="text-6xl font-bold">About Me</span>
                     <div
-                        className="flex flex-col items-center p-8 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2 max-sm:w-7/8">
+                        className="flex flex-col items-center p-8 mb-6 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2 max-sm:w-7/8 shadow-lg/30">
                         <span className="text-lg text-center">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
                         I am interested in parallel computing and love open source software.</span>
                     </div>
@@ -295,7 +295,7 @@ function App() {
                             </div>
                         </div>
 
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-left">
                             <div className="panel">
                                 <div
                                     className="w-1/2 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>

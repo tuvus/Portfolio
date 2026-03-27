@@ -45,5 +45,5 @@ i {
 }
 
 .panel {
-    @apply flex max-sm:flex-col p-8 gap-4 bg-gray-900 rounded-2xl ease-in-out hover:scale-102 duration-400 min-h-64;
+    @apply flex max-sm:flex-col p-8 mb-3 gap-4 bg-gray-900 rounded-2xl ease-in-out hover:scale-102 duration-400 min-h-64 shadow-lg/30;
 }
