@@ -25,6 +25,8 @@ function App() {
                 docHeight + " L 0 0 L " + docWidth + " 0 L " + docWidth + " " + docHeight + " Z"
             );
         }
+        const background = document.getElementById("background")!;
+        background.style.transform = `translateY(${(-last_scroll_position / 4)}px`;
     }
 
     const scrollFunction = function () {
@@ -48,9 +50,9 @@ function App() {
 
     return (
         <div className="w-max-1280px min-h-screen w-full">
-            <div className="absolute w-full -z-5 top-180">
-                <img src={blueWallpaper} className="parallax"></img>
-                <img src={blueWallpaper} className="parallax -scale-y-100 -mt-4"></img>
+            <div id="backgroundcontainer" className="fixed w-full h-full -z-5 overflow-y-clip top-0">
+                <img id="background" src={blueWallpaper} className="parallax"></img>
+                {/*<img src={blueWallpaper} className="parallax -scale-y-100 -mt-4"></img>*/}
             </div>
             {/*<div className="absolute w-full -z-4 top-0 mask-b-from-0% mask-b-to-70%">*/}
             {/*    <img src="src/assets/StarBackground.jpg" className="parallax"></img>*/}
