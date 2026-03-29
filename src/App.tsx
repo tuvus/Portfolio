@@ -26,7 +26,7 @@ function App() {
             );
         }
         const background = document.getElementById("background")!;
-        background.style.transform = `translateY(${(-last_scroll_position / 4)}px`;
+        background.style.transform = `translateY(${(-last_scroll_position / 5)}px`;
     }
 
     const scrollFunction = function () {
