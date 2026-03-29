@@ -112,7 +112,7 @@ function App() {
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
                 <section className="flex flex-col items-center mt-3 overflow-x-hidden">
-                    <span className="text-6xl font-bold">About Me</span>
+                    <span className="sectionTitle">About Me</span>
                     <div
                         className="flex flex-col items-center p-8 mb-6 gap-4 bg-gray-900 rounded-2xl mt-6 w-1/2 max-sm:w-7/8 shadow-lg/30">
                         <span className="text-lg text-center">Hello! I'm Oskar, a German-American software developer who has worked on many software projects, most of which can be found on GitHub.
@@ -120,7 +120,7 @@ function App() {
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold mb-6" data-aos="fade-up">Career</span>
+                    <span className="sectionTitle" data-aos="fade-up">Career</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
                             <div className="panel">
@@ -157,7 +157,7 @@ function App() {
                 </section>
 
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold mb-6" data-aos="fade-up">Contributions</span>
+                    <span className="sectionTitle" data-aos="fade-up">Contributions</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
                             <div className="panel">
@@ -205,7 +205,7 @@ function App() {
                     </div>
                 </section>
                 <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
-                    <span className="text-6xl font-bold mb-6" data-aos="fade-up">Projects</span>
+                    <span className="sectionTitle" data-aos="fade-up">Projects</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
                             <div className="panel">

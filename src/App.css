@@ -40,8 +40,12 @@ i {
     font-size: 40px;
 }
 
+.sectionTitle {
+    @apply sm:text-6xl text-4xl font-bold sm:mb-6 mb-2;
+}
+
 .panelSection {
-    @apply flex flex-col min-w-160 w-1/2 gap-10 p-4 align-middle;
+    @apply flex flex-col sm:min-w-160 sm:w-1/2 sm:gap-10 gap-2 p-4 align-middle;
 }
 
 .panel {
