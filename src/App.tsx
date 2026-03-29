@@ -279,8 +279,8 @@ function App() {
                         <div data-aos="fade-right">
                             <div className="panel">
                                 <div className="flex flex-col gap-2 items-center">
-                                    <span className="font-bold text-3xl text-white">STEM Programs</span>
-                                    <span className="text-white">A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
+                                    <span className="font-bold text-3xl">STEM Programs</span>
+                                    <span>A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
                                     <div className="flex gap-4">
                                         <Tooltip content="Java">
                                             <i className="devicon-java-plain"></i>
