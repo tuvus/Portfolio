@@ -108,7 +108,7 @@ function App() {
                 <header className="flex flex-col mt-10 rounded-4xl items-center">
                     <span className="text-7xl max-sm:text-4xl font-extrabold mb-3">Oskar Niesen</span>
                     <span className="text-2xl max-sm:text-xl font-bold mb-3">Software Developer</span>
-                    <img src={selfie} className="w-140 m-6 rounded-4xl aspect-square"
+                    <img src={selfie} className="w-140 m-6 p-4 rounded-4xl aspect-square"
                          alt="Oskar Niesen at the Iowa State University Nova HPC cluster."></img>
                 </header>
                 <section className="flex flex-col items-center mt-3 overflow-x-hidden">
@@ -125,7 +125,7 @@ function App() {
                         <div data-aos="fade-left">
                             <div className="panel">
                                 <div
-                                    className="sm:w-1/2 min-w-60 min-h-40 bg-[url(/src/assets/Workiva.png)] bg-center bg-contain bg-no-repeat bg-orange-100 rounded-2xl"/>
+                                    className="panelImg sm:w-1/2 bg-[url(/src/assets/Workiva.png)] bg-contain bg-no-repeat bg-orange-100"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">Workiva</span>
                                     <span>Interned at Workiva during summer 2024 working on the docs team. During the internship I developed new features such as document footnotes.</span>
@@ -150,7 +150,7 @@ function App() {
                                     <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
                                 </div>
                                 <div
-                                    className="w-5/4 min-w-60 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-center bg-contain bg-no-repeat bg-white rounded-2xl"/>
+                                    className="panelImg sm:w-5/4 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-contain bg-no-repeat bg-white"/>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ function App() {
                         <div data-aos="fade-left">
                             <div className="panel">
                                 <div
-                                    className="w-1/2 min-w-60 bg-[url(/src/assets/KDE.png)] bg-center bg-contain bg-no-repeat rounded-2xl"/>
+                                    className="panelImg sm:w-1/2 bg-[url(/src/assets/KDE.png)] bg-contain bg-no-repeat"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">KDE</span>
                                     <span>Helping out with a linux desktop environment. Maintaining Kclock and adding new features.</span>
@@ -199,7 +199,7 @@ function App() {
                                     </a>
                                 </div>
                                 <div
-                                    className="w-5/4 min-w-60 bg-[url(/src/assets/UncivLogo.jpg)] bg-center bg-cover bg-no-repeat bg-amber-200 rounded-2xl"/>
+                                    className="panelImg sm:w-5/4 aspect-square bg-[url(/src/assets/UncivLogo.jpg)] bg-cover bg-no-repeat bg-amber-200"/>
                             </div>
                         </div>
                     </div>
@@ -210,7 +210,7 @@ function App() {
                         <div data-aos="fade-left">
                             <div className="panel">
                                 <div
-                                    className="w-1/2 min-w-60 bg-[url(/src/assets/BigBattleHD.png)] bg-center bg-cover rounded-2xl"/>
+                                    className="panelImg sm:w-1/2 bg-[url(/src/assets/BigBattleHD.png)] bg-cover"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">Akroid</span>
                                     <span>A real time strategy game featuring a custom made simulation in space. The game was developed from the ground up using the Unity Game Engine.</span>
@@ -245,13 +245,13 @@ function App() {
                                     </a>
                                 </div>
                                 <div
-                                    className="w-5/4 min-w-60 bg-[url(/src/assets/Euclid.png)] bg-center bg-cover rounded-2xl"/>
+                                    className="panelImg sm:w-5/4 bg-[url(/src/assets/Euclid.png)] bg-cover"/>
                             </div>
                         </div>
                         <div data-aos="fade-left">
                             <div className="panel">
                                 <div
-                                    className="w-1/2 min-w-60 bg-[url(/src/assets/CourseScheduler.png)] bg-center bg-cover rounded-2xl"/>
+                                    className="panelImg sm:w-1/2 bg-[url(/src/assets/CourseScheduler.png)] bg-cover"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl ">Course Scheduler</span>
                                     <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
@@ -291,14 +291,14 @@ function App() {
                                     </a>
                                 </div>
                                 <div
-                                    className="w-5/4 min-w-60 bg-[url(/src/assets/STEMPrograms.png)] bg-center bg-cover rounded-2xl"/>
+                                    className="panelImg sm:w-5/4 bg-[url(/src/assets/STEMPrograms.png)] bg-cover"/>
                             </div>
                         </div>
 
                         <div data-aos="fade-left">
                             <div className="panel">
                                 <div
-                                    className="w-1/2 min-w-60 bg-[url(/src/assets/IowaSystems.png)] bg-center bg-cover rounded-2xl"/>
+                                    className="panelImg sm:w-1/2 bg-[url(/src/assets/IowaSystems.png)] bg-cover"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">Iowa Systems</span>
                                     <span className="">A 3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
