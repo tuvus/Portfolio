@@ -119,7 +119,7 @@ function App() {
                         I am interested in parallel computing and love open source software.</span>
                     </div>
                 </section>
-                <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
+                <section>
                     <span className="sectionTitle" data-aos="fade-up">Career</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
@@ -156,7 +156,7 @@ function App() {
                     </div>
                 </section>
 
-                <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
+                <section>
                     <span className="sectionTitle" data-aos="fade-up">Contributions</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
@@ -204,7 +204,7 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <section className="flex flex-col items-center w-full mt-16 overflow-x-hidden">
+                <section>
                     <span className="sectionTitle" data-aos="fade-up">Projects</span>
                     <div className="panelSection">
                         <div data-aos="fade-left">
