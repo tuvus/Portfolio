@@ -147,7 +147,7 @@ function App() {
                             <div className="panel">
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">Iowa State University</span>
-                                    <span>Graduated from Iowa State University majoring in computer science in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
+                                    <span>Graduated from Iowa State University majoring in Computer Science and German in fall 2025 with Summa Cum Laude. I graduated with honors and am also a member of the Phi Beta Kappa honor society.</span>
                                 </div>
                                 <div
                                     className="panelImg sm:w-5/4 bg-[url(/src/assets/IowaStateUniversity.jpg)] bg-contain bg-no-repeat bg-white"/>
@@ -184,7 +184,8 @@ function App() {
                             <div className="panel">
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">Unciv</span>
-                                    <span>Unciv is an open source remake of the video game Civilization V. Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.</span>
+                                    <span> Through over a hundred pull requests I worked on improving diplomacy, AI decision making, added new features like Espionage and implemented features requested by the community.
+                                    This was my first time contributing to someone else's open source project.</span>
                                     <div className="flex gap-4">
                                         <Tooltip content="Kotlin">
                                             <i className="devicon-kotlin-plain"></i>
@@ -213,7 +214,7 @@ function App() {
                                     className="panelImg sm:w-1/2 bg-[url(/src/assets/BigBattleHD.png)] bg-cover"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">Akroid</span>
-                                    <span>A real time strategy game featuring a custom made simulation in space. The game was developed from the ground up using the Unity Game Engine.</span>
+                                    <span>Akroid is a real time strategy game that I made featuring a custom made simulation in space. The game was developed from the ground up using the Unity Game Engine. A playable demo and more detail of the game can be found on the website.</span>
                                     <div className="flex gap-4">
                                         <Tooltip content="C-Sharp">
                                             <i className="devicon-csharp-plain"></i>
@@ -254,7 +255,7 @@ function App() {
                                     className="panelImg sm:w-1/2 bg-[url(/src/assets/CourseScheduler.png)] bg-cover"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl ">Course Scheduler</span>
-                                    <span className="">Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
+                                    <span className="">Developed a Course Scheduler that allows for easy importing and generating schedules for the Iowa State University computer science department.
                         This program helps find conflicts in the schedule and optimizes class times for administrators and professors.</span>
                                     <div className="flex gap-4">
                                         <Tooltip content="Node.js">
@@ -280,7 +281,8 @@ function App() {
                             <div className="panel">
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">STEM Programs</span>
-                                    <span>A set of algorithm-based games to teach and involve young learners in algorithmic thinking.</span>
+                                    <span>A set of algorithm-based games to teach and involve young learners in algorithmic thinking.
+                                    It is used at STEM nights by the Computer Science and Software Engineering Club at Iowa State University.</span>
                                     <div className="flex gap-4">
                                         <Tooltip content="Java">
                                             <i className="devicon-java-plain"></i>
@@ -301,7 +303,8 @@ function App() {
                                     className="panelImg sm:w-1/2 bg-[url(/src/assets/IowaSystems.png)] bg-cover"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">Iowa Systems</span>
-                                    <span className="">A 3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.</span>
+                                    <span className="">A 3d simulation of Iowa's prairie ecosystems to visualize the interactions of organisms.
+                                    The user can specify the starting conditions of the ecosystem and watch how the simulation plays out.</span>
                                     <div className="flex gap-4">
                                         <Tooltip content="C-Sharp">
                                             <i className="devicon-csharp-plain"></i>
