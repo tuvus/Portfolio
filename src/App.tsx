@@ -165,7 +165,7 @@ function App() {
                                     className="panelImg sm:w-1/2 bg-[url(/src/assets/KDE.png)] bg-contain bg-no-repeat"/>
                                 <div className="flex flex-col gap-2 items-center">
                                     <span className="font-bold text-3xl">KDE</span>
-                                    <span>Helping out with a linux desktop environment. Maintaining Kclock and adding new features.</span>
+                                    <span> Improve the Kclock backend to turn off when it isn't in use and helped resolve bug reports. </span>
                                     <div className="flex gap-4">
                                         <Tooltip content="C++">
                                             <i className="devicon-cplusplus-plain"></i>
